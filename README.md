@@ -2,8 +2,9 @@
 Implemented a FTP client in C++ for the CSS432 Networking course at UWB
 
 Karim Oumghar
+
 Css 432
-Program 5
+
 Ftp flow/explanation.
 
 Preface: Originally I had planned to use OOP and split up various components such as the socket, the connection, etc. However, due to time constraints and the difficulty of debugging such a program, I decided to use a somewhat linear/brute force approach to it. Basically, one main class, the program logic residing in main.cpp (yes, not exactly best practice, but it worked best for me). I organized the program so that it should be simple enough to follow in that the FTP logic is inside a infinite loop, which each command logic broken down into if statements (with plenty of supporting commentary). 
