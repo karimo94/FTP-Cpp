@@ -7,13 +7,13 @@ Css 432
 
 Ftp flow/explanation.
 
-Preface: Originally I had planned to use OOP and split up various components such as the socket, the connection, etc. However, due to time constraints and the difficulty of debugging such a program, I decided to use a somewhat linear/brute force approach to it. Basically, one main class, the program logic residing in main.cpp (yes, not exactly best practice, but it worked best for me). I organized the program so that it should be simple enough to follow in that the FTP logic is inside a infinite loop, which each command logic broken down into if statements (with plenty of supporting commentary). 
+Preface: Originally I had planned to use OOP and split up various components such as the socket, the connection, the command parser, etc. However, due to time constraints and the difficulty of debugging such a program, I decided to use a somewhat linear/brute force approach to it. Basically, one main class, the program logic residing in main.cpp (yes, not exactly best practice, but it worked best for me). I organized the program so that it should be simple enough to follow in that the FTP logic is inside a infinite loop, which each command logic broken down into if statements (with plenty of supporting commentary). 
 
-I managed to get all commands as instructed on the Program 5 document working properly, so I think there's definitely room to expand for more commands and possibly better functionality and code organization. Personally, one of the things I found odd about this assignment is the directions on commands such as 'ls' or 'get' where they say to fork a child process. Forking a child did not work for me in the least bit at all for some reason; perhaps it might be better practice but I simply never found a reason to use it.
+I managed to get all commands as instructed on the Program 5 document working properly, so I think there's definitely room to expand for more commands and possibly better functionality and code organization. There are still just a few subtle bugs however I didn't have enough time to really debug every test case. Personally, one of the things I found odd about this assignment is the directions on commands such as 'ls' or 'get' where they say to fork a child process. Forking a child did not work for me in the least bit at all for some reason; perhaps it might be better practice but I simply never found a reason to use it. 
 
 Flow:
 
-int main():
+    int main():
 
     check for correct number of arguments
     obtain the ftp url
