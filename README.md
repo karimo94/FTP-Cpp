@@ -5,7 +5,8 @@ Karim Oumghar
 
 Css 432
 
-username - uw net id
+username - your uw net id
+
 pass - UWB0th3ll
 
 **Ftp flow/explanation.**
